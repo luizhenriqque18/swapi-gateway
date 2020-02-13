@@ -1,0 +1,29 @@
+{
+  "name": "swapi-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon ./src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luizhenriqque18"
+  },
+  "author": "Luiz Henrique Oliveira de Souza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express-graphql": "^0.9.0",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^13.7.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "graphql-tools": "^4.0.6",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
