@@ -1,22 +1,22 @@
 import * as express from 'express';
-import router from './router';
+import server from './apollo-server';
 
 class App {
-    public server: any
+    public app: any
 
     constructor(){
-        this.server = express();
+        this.app = express();
         this.middlewares();
         this.routes();
     }
 
     middlewares(){
-        this.server.use(express.json());
+        server.applyMiddleware({ app :this.app })
     }
 
     routes(){
-        this.server.use(router);
+        //this.server.use(router);
     }
 }
 
-export default new App().server;
+export default new App().app;
